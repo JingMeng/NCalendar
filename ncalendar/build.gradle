@@ -1,17 +1,17 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
 android {
+    namespace 'com.necer'
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
-    compileSdkVersion 28
+    compileSdk 34
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdk 15
+        targetSdk 34
         versionCode 1
         versionName "5.0.1"
     }
@@ -23,12 +23,6 @@ dependencies {
 }
 
 
-publish {
-    userOrg = 'necerr'//bintray.com用户名
-    repoName = 'maven'//bintray仓库
-    groupId = 'com.necer.ncalendar'//jcenter上的路径
-    artifactId = 'ncalendar'//项目名称
-    publishVersion = '5.0.1'//版本号
-    desc = 'NCalendar'
-    website = 'https://github.com/yannecer/NCalendar'
-}
+
+
+

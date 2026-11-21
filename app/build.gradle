@@ -1,18 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.necer.ncalendar'
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
 
-    compileSdkVersion 28
+    compileSdk 34
     defaultConfig {
         applicationId "com.necer.ncalendar"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdk 15
+        targetSdk 34
         versionCode 2
         versionName "5.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -34,3 +35,4 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
 }
+
